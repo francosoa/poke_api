@@ -13,8 +13,10 @@
 
 # Descrição do Projeto
 
+Ash Ketchum  é um jovem treinador de 10 anos que sonha em se tornar um mestre Pokémon. Ash começou sua jornada em Kanto, onde recebeu seu primeiro Pokémon, Pikachu. Juntos, eles viajaram por várias regiões do mundo Pokémon, participando de batalhas de ginásio e torneios de treinadores, fazendo novos amigos e capturando novos Pokémon ao longo do caminho. 
+Para ajudar o jovem Ash em sua conquista de ser o maior treinador Pokémon da história, fizemos uma poke api.
 A POKE API é um repositório que possui chamadas de API para determinadas ações, e cada função tem o propósito de ajudar o Ash se tornar um grande treinador de Pokemons.
-Todos os dados sao disponilizados em formato JSON no link <https://pokemonapi.franciscovaldec.repl.co/pokemon>. O dataset foi extraido com Kaggle, e através do site construí endpoints que aceita os métodos necessários.
+Todos os dados sao disponilizados em formato JSON no link <https://pokemonapi.franciscovaldec.repl.co/pokemon>. O dataset foi extraido com Kaggle, e através de um site construí endpoints que aceita os métodos necessários.
 
 # Requisitos:
 
@@ -35,14 +37,25 @@ https://pokemonapi.franciscovaldec.repl.co/pokemon/<type>
 https://pokemonapi.franciscovaldec.repl.co/pokemon_post
   
 # Arquivos:
-  
+ - No arquivo settings temos as funções que vão ajudar ash a chegar no seu objetivo de ser um mestre Pokémon;
+ - No arquivo de app temos os endpoints da pokedex que vai armazenar as informações de acordo com o pedido de Ash.
 
 # Funcionalidades do projeto:
   
-  Cada
+Funcionalidades do arquivo `settings`:
   
 
-- `Funcionalidade 1`: descrição da funcionalidade 1
-- `Funcionalidade 2`: descrição da funcionalidade 2
-- `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3
+- `get_api`: requisição de get para pegar todos os pokémons da pokedex;
+
+
+- `request_post`: requisição para que Ash poste na Pokedex;
+
+
+- `captured_pokemon`: função que possibilita Ash indicar qual pokémon ele capturou e postar em sua pokedex;
+
+- `pokedex`: Em algumas batalhas, Ash nao pode utilizar qualquer Pokémon, portanto, essa função faz com que ele pegue apenas pokémon de terminado tipo e XP para as suas batalhas de giná
+sio
+
+Funcionalidades do arquivo `app`:
+
+O arquivo app é responsável por rodar o programa de API, e também por nos passar os endpoints que serao chamados no Postman.
