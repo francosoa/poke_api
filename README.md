@@ -1,6 +1,6 @@
 ![Banner para Reddit Bloco de Cor Brilhante Clássico Amarelo, Azul e Vermelho](https://user-images.githubusercontent.com/76532722/236693898-b1714060-2851-4db1-9dc9-4fc649576bd2.png)
 
-:construction: **Projeto em construção** :construction:
+
 
 # Índice 
 
