@@ -9,6 +9,7 @@
 * [Endpoints](#endpoints)
 * [Arquivos](#arquivos)
 * [Funcionalidades do projeto](#funcionalidades-do-projeto)
+* [Requisição](#requisição)
 
 
 # Descrição do Projeto
@@ -59,3 +60,43 @@ sio
 Funcionalidades do arquivo `app`:
 
 O arquivo app é responsável por rodar o programa de API, e também por nos passar os endpoints que serao chamados no Postman.
+ 
+ # Requisição:
+  
+  - Coloque o seu arquivo `app.py` para rodar, após isso, será criando uma uri para a aplicação local;
+  - Crie um requisição de POST no Postman, no exemplo estou adicionando um pokémon capturado, portanto o endpoint será `http://localhost:500/pokemon_post`:
+![image](https://github.com/francosoa/poke_api/assets/76532722/202503de-d764-48b4-89af-6b89ca0103d7)
+  - Ainda no Postman, na opção de body, é hora de passar o corpo da sua postagem. Para realizar a postagem eu preciso passar o enpoint do que eu quero fazer, e o dicionário de pokémons que Ash capturou ao longo da jornada, ex:
+  `[
+    {
+        "endpoint": "pokemon_post"
+    },
+
+    { 
+  "captured_pokemon": 
+  [
+  {
+        "attack": 49000000,
+        "defense": 490000000,
+        "generation": 1000000,
+        "hp": 450000000,
+        "id": 1,
+        "legendary": false,
+        "name": "Bulbasaur",
+        "sp_atk": 65,
+        "sp_def": 65,
+        "speed": 45,
+        "total": 318,
+        "type_1": "Grass",
+        "type_2": "Poison"
+    }
+  ]
+
+    }
+]`
+
+- Agora é só enviar a requisição, e acessar o site para verificar se o pokémon já está na pokedex: https://pokemonapi.franciscovaldec.repl.co/pokemon
+  
+Para fazer outros tipos de requisição é só consultar o tópico de **enpoints**, e montar sua requisição de acordo com o que deseja fazer.
+  
+  
