@@ -67,7 +67,8 @@ O arquivo app é responsável por rodar o programa de API, e também por nos pas
   - Crie um requisição de POST no Postman, no exemplo estou adicionando um pokémon capturado, portanto o endpoint será `http://localhost:500/pokemon_post`:
 ![image](https://github.com/francosoa/poke_api/assets/76532722/202503de-d764-48b4-89af-6b89ca0103d7)
   - Ainda no Postman, na opção de body, é hora de passar o corpo da sua postagem. Para realizar a postagem eu preciso passar o enpoint do que eu quero fazer, e o dicionário de pokémons que Ash capturou ao longo da jornada, ex:
-  `[
+  
+<pre><code class="html"> [
     {
         "endpoint": "pokemon_post"
     },
@@ -93,7 +94,7 @@ O arquivo app é responsável por rodar o programa de API, e também por nos pas
   ]
 
     }
-]`
+]` </code></pre>
 
 - Agora é só enviar a requisição, e acessar o site para verificar se o pokémon já está na pokedex: https://pokemonapi.franciscovaldec.repl.co/pokemon
   
